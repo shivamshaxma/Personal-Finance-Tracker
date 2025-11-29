@@ -40,7 +40,7 @@ class FinanceTracker:
             "Amount": amount
         }])
 
-        # ✅ FIX: Avoid pandas FutureWarning for concat with empty DataFrame
+        #  Avoid pandas FutureWarning for concat with empty DataFrame
         if self.df.empty:
             self.df = entry
         else:
@@ -145,3 +145,4 @@ class FinanceTracker:
 if __name__ == "__main__":
     tracker = FinanceTracker()
     tracker.run()
+
